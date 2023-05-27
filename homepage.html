@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        
+        *{
+            
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .navbar{
+            background-color: rgb(79, 39, 79);
+            border-radius: 30px;
+
+        }
+        .navbar li{
+            float: right;
+            list-style: none;
+            padding: 40px 20px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 18px;
+            padding: 25px 20px;
+        }
+        .navbar li a:hover{
+            color: rgb(79, 39, 79);
+            background-color: orange;
+        }
+        #logo{
+            position: absolute;
+            left: 10px;
+            top: 1px;
+            display: inline-block;
+            color:white;
+        }
+        #block{
+            height:400px;
+            width: 600px;
+            margin:100px auto;
+            box-sizing: border-box;
+            background-color: orange;
+            border: 3px solid rgb(79, 39, 79);
+            text-align: center;
+            border-radius: 5px;
+            padding-top: 100px;
+
+        }
+        .inputs{
+            background-color: rgb(226, 233, 233);
+            height: 25px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 11px;
+            padding: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .input2{
+            background-color: rgb(226, 233, 233);
+            height: 30px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 11px;
+            padding: 5px;
+            margin: 2px;
+            text-align: center;
+        }
+        #submit{
+            background-color: black;
+            height: 35px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 11px;
+            padding: 5px;
+            margin: 30px;
+            font-weight: bold;
+            font-size: 18px;
+            color: antiquewhite;
+        }
+        #submit:hover{
+            color: black;
+            background-color: rgb(228, 16, 16);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a  href="login.html">Log Out</a></li>
+            <li><a  href="myaccount.php">My Account</a></li>
+            <li><a href="booking.php">My Bookings</a></li>
+            <li><a href="">Flight</a></li>
+            <li><a href="">Train</a></li>
+            <li><a href="">Bus</a></li>
+            <li><a href="homepage.html">Home</a></li>
+            <li id="logo">Bookmyticket</li>
+       
+        </ul>
+    </nav>
+    <nav id="block">
+    <form action="btfdetails.php">
+        Source:<select name="source" class="input2">
+            <option value="Raipur">Raipur Jn-R</option>
+            <option value="Durg">Durg</option>
+            <option value="Bhatapara">Bhatapara</option>
+            <option value="Uslapur">Uslapur</option>
+            <option value="Pendra Road">Pendra Road</option>
+            <option value="Annupur Jn">Annupur Jn</option>
+            <option value="Shahdol">Shahdol</option>
+            <option value="Umaria">Umaria</option>
+            <option value="Katni">Katni</option>
+            <option value="Saugor">Saugor</option>
+            <option value="LakshmibaiJHS">LakshmibaiJHS</option>
+            <option value="H Nizzamuddin">H Nizzamuddin</option>
+            
+          </select>
+          Destination:<select name="destination" class="input2">
+            <option value="Raipur">Raipur Jn-R</option>
+            <option value="Durg">Durg</option>
+            <option value="Bhatapara">Bhatapara</option>
+            <option value="Uslapur">Uslapur</option>
+            <option value="Pendra Road">Pendra Road</option>
+            <option value="Annupur Jn">Annupur Jn</option>
+            <option value="Shahdol">Shahdol</option>
+            <option value="Umaria">Umaria</option>
+            <option value="Katni">Katni</option>
+            <option value="Saugor">Saugor</option>
+            <option value="LakshmibaiJHS">LakshmibaiJHS</option>
+            <option value="H Nizzamuddin">H Nizzamuddin</option>
+          </select><br>
+        <input class="inputs" required type="date" name="date" placeholder="Date"><br>
+        <input id="submit" type="submit"><br>
+    </form>
+</nav>
+</body>
+</html>

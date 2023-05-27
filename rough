@@ -1,0 +1,37 @@
+<?php
+        $x=fopen("lastsearch.txt",'w');
+        $data=$_GET["source"].','.$_GET["destination"].','.$_GET["date"];
+        fwrite($x,$data);
+        fclose($x);
+        $file=fopen("train.txt",'r');
+        while (!feof($file)){
+            $line=fgets($file);
+            $array=explode(",",$line);
+            if (isset($array[0])) $trainno=$array[0];
+            if (isset($array[1])) $seats1=$array[1];
+            if (isset($array[2])) $seats2=$array[2];
+            if (isset($array[3])) $seats3=$array[3];
+            if (isset($array[4])) $seats4=$array[4];
+            if (isset($array[5])) $t1=$array[5];
+            if (isset($array[6])) $t2=$array[6];
+            if (isset($array[7])) $p1=$array[7];
+            if (isset($array[8])) $p2=$array[8];
+            if (isset($array[9])) $p3=$array[9];
+            if (isset($array[10])) $p4=$array[10];
+            if (isset($array[11])) $tname=$array[11];
+    echo '
+    <div class=block>
+        <strong>'; echo $tname.'('.$trainno.')'.'</strong>
+        <hr>
+        <p id="t1">'; echo $t1; echo'</p>
+        <p id="t2">'; echo $t2; echo'</p><br>
+        <p id="source">'; echo $_GET["source"]; echo'</p>
+        <p id="destination">'; echo $_GET["destination"]; echo'</p><br>
+        <a href="payment.html" class="seat">SL-'; echo $seats1; echo '<br><strong style="color:#ADD8E6;">Rs.'.$p1.'</strong></a>
+        <a href="payment.html" class="seat">3A-'; echo $seats2; echo '<br><strong style="color:#ADD8E6;">Rs.'.$p2.'</strong></a>
+        <a href="payment.html" class="seat">2A-'; echo $seats3; echo '<br><strong style="color:#ADD8E6;">Rs.'.$p3.'</strong></a>
+        <a href="payment.html" class="seat">1A-'; echo $seats4; echo '<br><strong style="color:#ADD8E6;">Rs.'.$p4.'</strong></a><br>
+    </div>';
+        }
+        fclose($file);
+    ?>

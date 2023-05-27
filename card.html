@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Payment</title>
+    <style>
+        #block{
+            height: 400px;
+            width: 500px;
+            margin: auto;
+            background-color: orange;
+            margin-top: 150px;
+            border-radius: 3px;
+            text-align: center;
+            padding-top: 50px;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+        #inputs{
+            background-color: rgb(226, 233, 233);
+            height: 25px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 11px;
+            padding: 5px;
+            margin: 2px;
+            text-align: center;
+        }
+        #input2{
+            background-color: rgb(226, 233, 233);
+            height: 25px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 11px;
+            padding: 5px;
+            margin: 2px;
+            text-align: center;
+        }
+        #submit{
+            background-color: black;
+            height: 35px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 11px;
+            padding: 5px;
+            margin-top:20px;
+            font-weight: bold;
+            font-size: 18px;
+            color: antiquewhite;
+        }
+        #submit:hover{
+            color: black;
+            background-color: rgb(228, 16, 16);
+        }
+        </style>
+</head>
+<body>
+    <div id="block">
+        <h1>Complete Payment</h1>
+    <form action="bookingsuc.php">
+        Card Number: <input id="inputs" type="number"><br>
+        Expiry Date:<input id="input2" type="number" placeholder="Month"><input id="input2" type="number" placeholder="Year"><br>
+        CVV: <input id="inputs" type="number"><br>
+        <input id="submit" type="submit">
+    </form>
+</div>
+</body>
+</html>

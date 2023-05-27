@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        .inputs{
+            background-color: rgb(226, 233, 233);
+            height: 25px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 11px;
+            padding: 5px;
+            margin: 2px;
+            text-align: center;
+        }
+        #left{
+            
+            height: 700px;
+            width: 1000px;
+            box-sizing: border-box;
+            float:left;
+        }
+        #submit{
+            background-color: rgb(66, 176, 176);
+            height: 35px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 11px;
+            padding: 5px;
+            margin: 30px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        #submit:hover{
+            color: rgb(76, 76, 173);
+            background-color: black;
+        }
+        #new{
+            padding: 20px 225px;
+        }
+        #full{
+            background-color: rgb(66, 176, 176);
+        }
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 40px;
+        }
+        #signup{
+            text-align: center;
+            
+        }
+        #right{
+            height: 700px;
+            width: 440px;
+            background-image: url('signup.jpg');
+            
+            box-sizing: border-box;
+            float: left;
+        }
+        h3{
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+        .fa {
+            padding: 10px;
+            font-size: 15px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+
+        }
+        .fa-facebook {
+        background: #3B5998;
+        color: white;
+        }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+}
+        .fa-instagram {
+        background: #125688;
+        color: white;
+        }
+        #logo{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-size: 30px;
+            padding-top: 225px;
+        }
+        #signin{
+            background-color: white;
+            height: 35px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 11px;
+            padding: 5px;
+            margin: auto auto;
+            font-weight: bold;
+            font-size: 18px;
+            
+        }
+        #signin:hover{
+            color: rgb(76, 76, 173);
+            background-color: black;
+        }
+        #right{
+            border-radius: 20px;
+            text-align: center;
+        }
+        h6{
+            text-align: center;
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="left">
+        <h3>Bookmyticket</h3>
+    <h1>CREATE ACCOUNT</h1>
+    <h6>!Username already exists!</h6>
+    <form id="signup" action="signup.php">
+
+        <input class="inputs" type="text" name="name" placeholder="Name"><br>
+        <input class="inputs" type="email" name="email" placeholder="Email id"><br>
+        <input class="inputs" type="text" name="username" placeholder="Username"><br>
+        <input class="inputs" type="password" name="password" placeholder="Password"><br>
+        
+        <input class="inputs" type="number" name="number" placeholder="Mobile number"><br>
+        <button id="submit" type="submit">SIGN UP</button>
+    </form>
+    <div id="logo">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+</div>
+</div>
+    <div id="right">
+        <p>Already have an account on Bookmyticket?</p>
+        <button id="signin" onclick="window.location.href='login.html'">SIGN IN</button>
+    </div>
+</body>
+</html>
